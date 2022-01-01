@@ -56,6 +56,7 @@
     <footer class="text-end">&copy; All rights reserved to MOHEB</footer>
     <script>
       function searchLyrics() {
+        $(".single-lyrics").empty();
         const input = $("#inputTitle").val();
         fetch(`https://api.lyrics.ovh/suggest/${input}`)
           .then((res) => res.json())
