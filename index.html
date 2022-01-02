@@ -46,7 +46,16 @@
           </div>
         </div>
         <!-- Single Lyrics -->
-        <div class="single-lyrics text-center" id="lyrics-section"></div>
+        <div class="text-center" id="lyrics-section">
+          <marquee
+            behavior="scroll"
+            direction="up"
+            width="70%"
+            height="150rem"
+            scrollamount="4"
+            class="single-lyrics text-center"
+          ></marquee>
+        </div>
         <div
           class="search-result col-md-8 mx-auto py-4"
           id="lyricsSuggetion"
@@ -95,7 +104,7 @@
             }
             $(".single-lyrics").empty();
             $(".single-lyrics").append(`<div class="lyrics">
-            <h1>${title}</h1>
+              <h1>${title}</h1>
             <p>${lyrics}</p>
             </div>`);
           });
